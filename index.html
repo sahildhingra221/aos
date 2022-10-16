@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AOS</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./aos.css">
+    </head>
+    <body>
+        <div class="h-100vh"></div>
+
+        <div class="container">
+            <div class="card-animated" data-aos="fade-up" data-aos-delay="0">
+                Item 1
+            </div>
+            <div class="card-animated" data-aos="fade-up" data-aos-delay="200">
+                Item 2
+            </div>
+            <div class="card-animated" data-aos="fade-up" data-aos-delay="400">
+                Item 3
+            </div>
+        </div>
+
+        <script src="./aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1200,
+                once: true,
+            })
+        </script>
+    </body>
+</html>
